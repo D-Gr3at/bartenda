@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d35d6e; -fx-border-style: solid; -fx-border-color: #d08752; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tribesquare.LoginController">
+   <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="600.0">
+      <Text fill="#ffffffba" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="BartendA" textAlignment="CENTER">
+         <font>
+            <Font name="Manjari Regular" size="40.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="210.0" right="150.0" top="40.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#e8e4e4c9" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="260.0" right="260.0" top="20.0" />
+         </VBox.margin>
+      </Text>
+   </VBox>
+   <VBox layoutY="154.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0">
+      <TextField fx:id="username" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Enter Username">
+         <VBox.margin>
+            <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TextField>
+      <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="400.0" promptText="Enter Password">
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </PasswordField>
+      <Button fx:id="submitLoginButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="150.0" text="Submit" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="210.0" right="100.0" top="20.0" />
+         </VBox.margin>
+      </Button>
+   </VBox>
+</AnchorPane>

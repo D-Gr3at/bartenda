@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="myAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"  >
+    <SplitPane dividerPositions="0.2" prefHeight="550.0" prefWidth="1000.0">
+        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="200.0" />
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0">
+            <TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+                <Tab text="Floor Plan" />
+                <Tab text="Call Status">
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+                        <TableView fx:id="callStatusTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+                            <columns>
+                                <TableColumn fx:id="date" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="115.0" text="Date" />
+                                <TableColumn fx:id="time" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="142.0" text="Time" />
+                                <TableColumn fx:id="type" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="97.0" text="Type" />
+                                <TableColumn fx:id="staff" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="146.0" text="Personnel" />
+                                <TableColumn fx:id="responseTime" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="147.0" text="Response Time" />
+                                <TableColumn fx:id="status" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="152.0" text="Status" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Unsettled Call">
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+                        <TableView fx:id="unsettledCallTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0">
+                            <columns>
+                                <TableColumn fx:id="date2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="115.0" text="Date" />
+                                <TableColumn fx:id="time2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="149.0" text="Time" />
+                                <TableColumn fx:id="type2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="110.0" text="Type" />
+                                <TableColumn fx:id="staff2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="133.0" text="Personnel" />
+                                <TableColumn fx:id="responseTime2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="148.0" text="Response Time" />
+                                <TableColumn fx:id="status2" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="144.0" text="Status" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+            </TabPane>
+        </AnchorPane>
+    </SplitPane>
+</AnchorPane>
